@@ -1,202 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="./style/style.css" />
-  <title>AMH Catalyst Center</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>AMH Catalyst Center</title>
+  </head>
 
-<body>
-  <header class="amh-header">
-    <nav class="navbar navbar-expand-lg navbar-light ">
+  <body>
+    <header class="amh-header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img
+              src="assets/amh_logo_1-color.png"
+              class="amh-logo"
+              alt="AMH Catalyst Center"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#amhNav"
+            aria-controls="amhNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="amhNav">
+            <ul class="navbar-nav ms-lg-auto me-lg-4 mb-2 mb-lg-0 gap-lg-4">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./investors.html">Investors &amp; Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+
+            <div class="d-flex">
+              <a href="#" class="btn amh-nav-cta rounded-pill px-4"
+                >Run with AMH</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="amh-hero">
+      <div class="amh-hero-bg" aria-hidden="true">
+        <div class="bg-layer layer-a">
+          <div class="layer-motion motion-a">
+            <img src="assets/hero-patron-1.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="bg-layer layer-b">
+          <div class="layer-motion motion-b">
+            <img src="assets/hero-patron-2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container amh-hero-content">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-9">
+            <div class="amh-hero-right">
+              <div class="amh-hero-copy">
+                <h1 class="amh-hero-title">
+                  Women founders run with us<br />
+                  to scale their businesses<br />
+                  and confidently access venture capital.
+                </h1>
+
+                <p class="amh-hero-subtitle">
+                  Tools, guidance, networks, and community designed to get you
+                  investor-ready.
+                </p>
+              </div>
+
+              <div class="amh-hero-actions">
+                <a href="#" class="btn amh-hero-cta rounded-pill px-4"
+                  >Run with AMH</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="amh-section amh-timeline">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-          <img src="assets/amh_logo_1-color.png" class="amh-logo" alt="AMH Catalyst Center">
-        </a>
+        <div class="row align-items-start g-5">
+          <!-- LEFT: story -->
+          <div class="col-lg-7" data-aos="fade-up">
+            <p class="amh-eyebrow">Why AMH exists</p>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#amhNav" aria-controls="amhNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+            <h2 class="amh-h2">
+              We built a clearer path to venture capital—for women founders.
+            </h2>
 
-        <div class="collapse navbar-collapse" id="amhNav">
-          <ul class="navbar-nav ms-lg-auto me-lg-4 mb-2 mb-lg-0 gap-lg-4">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Investors &amp; Sponsors</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-          </ul>
+            <p class="amh-p">
+              We believe in a world where women founders can access the capital
+              they need and capital systems are built to support them.
+            </p>
 
-          <div class="d-flex">
-            <a href="#" class="btn amh-nav-cta rounded-pill px-4">Run with AMH</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+            <p class="amh-p">
+              After funding hundreds of founders, we’ve learned that raising
+              venture capital isn’t just about having a great idea.
+            </p>
 
-  <section class="amh-hero">
-    <!-- Animated SVG background -->
-    <div class="amh-hero-bg" aria-hidden="true">
-      <div class="bg-layer layer-a">
-        <div class="layer-motion motion-a">
-          <img src="assets/Anima_Patrones-01.svg" alt="">
-        </div>
-      </div>
-
-      <div class="bg-layer layer-b">
-        <div class="layer-motion motion-b">
-          <img src="assets/Anima_Patrones-02.svg" alt="">
-        </div>
-      </div>
-    </div>
-
-    <div class="container amh-hero-content">
-      <div class="row align-items-stretch g-5">
-        <!-- (1) Image -->
-        <div class="col-lg-6">
-          <div class="amh-hero-imageWrap">
-            <img src="assets/hero-image.png" alt="AMH hero image">
-          </div>
-        </div>
-
-        <!-- Right side: (2) Text + (3) CTA -->
-        <div class="col-lg-6">
-          <div class="amh-hero-right">
-            <div class="amh-hero-copy">
-              <h1 class="amh-hero-title">
-                Women founders run with us<br>
-                to scale their businesses<br>
-                and confidently access venture capital.
-              </h1>
-
-              <p class="amh-hero-subtitle">
-                Tools, guidance, networks, and community designed to get you investor-ready.
+            <div class="amh-quote" data-aos="fade-up" data-aos-delay="120">
+              <p>
+                <strong
+                  >But most women founders are expected to figure all of that
+                  out alone</strong
+                >, in systems that weren’t designed for us. So we built
+                something different.
               </p>
             </div>
+          </div>
 
-            <div class="amh-hero-actions">
-              <a href="#" class="btn amh-hero-cta rounded-pill px-4">Run with AMH</a>
+          <!-- RIGHT: timeline -->
+          <div class="col-lg-5">
+            <div class="amh-steps">
+              <div class="amh-steps-bar" aria-hidden="true"></div>
+
+              <article class="amh-step" data-aos="fade-up" data-aos-delay="0">
+                <div class="amh-step-dot">01</div>
+                <div class="amh-step-body">
+                  <h3 class="amh-step-title">
+                    Knowing what investors actually care about.
+                  </h3>
+                  <p class="amh-step-text">
+                    Clarify what matters most so you can focus your story and
+                    numbers.
+                  </p>
+                </div>
+              </article>
+
+              <article class="amh-step" data-aos="fade-up" data-aos-delay="140">
+                <div class="amh-step-dot">02</div>
+                <div class="amh-step-body">
+                  <h3 class="amh-step-title">
+                    Being able to explain your business in their language.
+                  </h3>
+                  <p class="amh-step-text">
+                    Translate your value into a pitch investors instantly
+                    understand.
+                  </p>
+                </div>
+              </article>
+
+              <article class="amh-step" data-aos="fade-up" data-aos-delay="280">
+                <div class="amh-step-dot">03</div>
+                <div class="amh-step-body">
+                  <h3 class="amh-step-title">
+                    Having numbers, strategy, and answers ready when it counts.
+                  </h3>
+                  <p class="amh-step-text">
+                    Be prepared for diligence, questions, and momentum moments.
+                  </p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
- <section class="amh-section amh-timeline">
-  <div class="container">
-    <div class="row align-items-start g-5">
-      <!-- LEFT: story -->
-      <div class="col-lg-7" data-aos="fade-up">
-        <p class="amh-eyebrow">Why AMH exists</p>
-
-        <h2 class="amh-h2">
-          We built a clearer path to venture capital—for women founders.
-        </h2>
-
-        <p class="amh-p">
-          We believe in a world where women founders can access the capital they need and capital systems are built to support them.
-        </p>
-
-        <p class="amh-p">
-          After funding hundreds of founders, we’ve learned that raising venture capital isn’t just about having a great idea.
-        </p>
-
-        <div class="amh-quote" data-aos="fade-up" data-aos-delay="120">
-          <p>
-            <strong>But most women founders are expected to figure all of that out alone</strong>, in systems that weren’t designed for us.
-            So we built something different.
+    </section>
+    <section class="insid-track">
+      <div class="container">
+        <div class="insid-track__top">
+          <h2 class="insid-track__title">
+            AMH is your inside track to venture readiness.
+          </h2>
+          <p class="insid-track__subtitle">
+            We give you everything you need before you pitch, so you show up
+            prepared and powerful.
           </p>
         </div>
-      </div>
 
-      <!-- RIGHT: timeline -->
-      <div class="col-lg-5">
-        <div class="amh-steps">
-          <div class="amh-steps-bar" aria-hidden="true"></div>
-
-          <article class="amh-step" data-aos="fade-up" data-aos-delay="0">
-            <div class="amh-step-dot">01</div>
-            <div class="amh-step-body">
-              <h3 class="amh-step-title">Knowing what investors actually care about.</h3>
-              <p class="amh-step-text">Clarify what matters most so you can focus your story and numbers.</p>
+        <div class="insid-track__card">
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="insid-track__item">
+                <div class="insid-track__icon"><i class="bi bi-tools"></i></div>
+                <h3>Tools</h3>
+                <p>
+                  Proprietary AI-powered business planning, financial modeling,
+                  and pitch prep designed specifically for women founders.
+                </p>
+              </div>
             </div>
-          </article>
 
-          <article class="amh-step" data-aos="fade-up" data-aos-delay="140">
-            <div class="amh-step-dot">02</div>
-            <div class="amh-step-body">
-              <h3 class="amh-step-title">Being able to explain your business in their language.</h3>
-              <p class="amh-step-text">Translate your value into a pitch investors instantly understand.</p>
+            <div class="col-lg-3 col-md-6">
+              <div class="insid-track__item">
+                <div class="insid-track__icon">
+                  <i class="bi bi-stopwatch"></i>
+                </div>
+                <h3>Guidance</h3>
+                <p>
+                  Expert-led frameworks and prompts that help you turn your idea
+                  into a fundable story.
+                </p>
+              </div>
             </div>
-          </article>
 
-          <article class="amh-step" data-aos="fade-up" data-aos-delay="280">
-            <div class="amh-step-dot">03</div>
-            <div class="amh-step-body">
-              <h3 class="amh-step-title">Having numbers, strategy, and answers ready when it counts.</h3>
-              <p class="amh-step-text">Be prepared for diligence, questions, and momentum moments.</p>
+            <div class="col-lg-3 col-md-6">
+              <div class="insid-track__item">
+                <div class="insid-track__icon">
+                  <i class="bi bi-diagram-3"></i>
+                </div>
+                <h3>Networks</h3>
+                <p>
+                  Access to a trusted ecosystem of founders, operators, and
+                  investors who understand where you’re going.
+                </p>
+              </div>
             </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="insid-track">
-  <div class="container">
-    <div class="insid-track__top">
-      <h2 class="insid-track__title">AMH is your inside track to venture readiness.</h2>
-      <p class="insid-track__subtitle">
-        We give you everything you need before you pitch, so you show up prepared and powerful.
-      </p>
-    </div>
-  </div>
 
-  <div class="parallax" aria-hidden="true">
-    <img src="assets/paralllax.png" alt="" class="parallax__img">
-  </div>
-
-  <div class="container">
-    <div class="insid-track__card">
-      <div class="row g-4">
-        <div class="col-lg-3 col-md-6">
-          <div class="insid-track__item">
-            <div class="insid-track__icon"><i class="bi bi-tools"></i></div>
-            <h3>Tools</h3>
-            <p>Proprietary AI-powered business planning, financial modeling, and pitch prep designed specifically for women founders.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="insid-track__item">
-            <div class="insid-track__icon"><i class="bi bi-stopwatch"></i></div>
-            <h3>Guidance</h3>
-            <p>Expert-led frameworks and prompts that help you turn your idea into a fundable story.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="insid-track__item">
-            <div class="insid-track__icon"><i class="bi bi-diagram-3"></i></div>
-            <h3>Networks</h3>
-            <p>Access to a trusted ecosystem of founders, operators, and investors who understand where you’re going.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="insid-track__item">
-            <div class="insid-track__icon"><i class="bi bi-people"></i></div>
-            <h3>Community</h3>
-            <p>A supportive, women-led space where you can ask real questions, get real feedback, and run with confidence.</p>
+            <div class="col-lg-3 col-md-6">
+              <div class="insid-track__item">
+                <div class="insid-track__icon">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3>Community</h3>
+                <p>
+                  A supportive, women-led space where you can ask real
+                  questions, get real feedback, and run with confidence.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
     <section class="amh-unlock">
       <div class="container">
         <div class="amh-unlock__head text-center" data-aos="fade-up">
@@ -206,7 +260,11 @@
         <div class="row align-items-center g-5">
           <!-- LEFT: system card -->
           <div class="col-lg-7">
-            <div class="amh-unlock__card" data-aos="fade-up" data-aos-delay="80">
+            <div
+              class="amh-unlock__card"
+              data-aos="fade-up"
+              data-aos-delay="80"
+            >
               <div class="row g-3">
                 <div class="col-md-6" data-aos="fade-up" data-aos-delay="120">
                   <div class="amh-unlock__item">
@@ -270,264 +328,81 @@
               </div>
             </div>
 
-            <p class="amh-unlock__note text-center " data-aos="fade-up" data-aos-delay="360">
-              All inside one simple appbuilt for you.<br>
+            <p
+              class="amh-unlock__note text-center"
+              data-aos="fade-up"
+              data-aos-delay="360"
+            >
+              All inside one simple appbuilt for you.<br />
               No cost. No pressure. Just support to help you scale.
             </p>
           </div>
 
           <!-- RIGHT: human image -->
           <div class="col-lg-5">
-            <div class="amh-unlock__photo" data-aos="zoom-in" data-aos-delay="140">
-              <img src="assets/unlock.png" alt="Women founders">
+            <div
+              class="amh-unlock__photo"
+              data-aos="zoom-in"
+              data-aos-delay="140"
+            >
+              <img src="assets/unlock.png" alt="Women founders" />
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="amh-access" id="access">
+    <footer class="amh-footer">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-9 text-center">
-            <div class="amh-access__content">
-              <h2 class="amh-access__title">
-                Access high-potential founders.<br />
-                Unlock outsized returns.
-              </h2>
+        <div class="amh-footer__top">
+          <p class="amh-footer__headline">
+            Join a community of women founders pushing the boundaries of what’s
+            possible.
+          </p>
 
-              <p class="amh-access__text">
-                AMH Catalyst Center prepares overlooked, high-potential founders
-                to become venture-ready companies: women founders.
-              </p>
-
-              <a class="btn amh-access__btn" href="#">
-                Run with AMH
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="amh-proof" id="why-women-led">
-    <div class="container">
-      <div class="row align-items-start g-5">
-        
-        <div class="col-12 col-lg-6">
-          <div class="amh-proof__copy">
-            <p class="amh-proof__eyebrow" 
-              data-aos="fade-up" 
-              data-aos-duration="700">
-              Why Women-Led Businesses Matter
+          <div class="amh-footer__cta">
+            <a href="#" class="btn amh-footer__btn rounded-pill px-4"
+              >Run with AMH</a
+            >
+            <p class="amh-footer__note">
+              Join the Beta • Start preparing to raise
             </p>
-
-            <h2 class="amh-proof__title" 
-                data-aos="fade-up" 
-                data-aos-delay="100"
-                data-aos-duration="800">
-              Underpriced assets outperform.
-            </h2>
-
-            <p class="amh-proof__lead"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="800">
-              Women-led companies are one of the most under-capitalized segments in venture, not because of weaker
-              performance, but because of weaker signal.
-            </p>
-
-            <a class="btn amh-proof__btn"
-              href="#"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-duration="800">
-              Run with AMH
-            </a>
           </div>
         </div>
 
-        <div class="col-12 col-lg-6">
-          <div class="amh-proof__grid">
+        <div class="amh-footer__divider"></div>
 
-            <article class="amh-proof__chip"
-                    data-aos="fade-up"
-                    data-aos-delay="150"
-                    data-aos-duration="800">
-              <div class="amh-proof__icon">$</div>
-              <div class="amh-proof__meta">
-                <p class="amh-proof__chipTitle">Massive Market Opportunity</p>
-                <p class="amh-proof__chipValue">$5–6T</p>
-                <p class="amh-proof__chipSub">in economic impact</p>
-              </div>
-            </article>
-
-            <article class="amh-proof__chip"
-                    data-aos="fade-up"
-                    data-aos-delay="250"
-                    data-aos-duration="800">
-              <div class="amh-proof__icon">↗</div>
-              <div class="amh-proof__meta">
-                <p class="amh-proof__chipTitle">Market Outperformance</p>
-                <p class="amh-proof__chipValue">20%</p>
-                <p class="amh-proof__chipSub">stock momentum boost</p>
-              </div>
-            </article>
-
-            <article class="amh-proof__chip"
-                    data-aos="fade-up"
-                    data-aos-delay="350"
-                    data-aos-duration="800">
-              <div class="amh-proof__icon">⏱</div>
-              <div class="amh-proof__meta">
-                <p class="amh-proof__chipTitle">Stronger Exit Performance</p>
-                <p class="amh-proof__chipValue">12.5%</p>
-                <p class="amh-proof__chipSub">faster exits</p>
-              </div>
-            </article>
-
-            <article class="amh-proof__chip"
-                    data-aos="fade-up"
-                    data-aos-delay="450"
-                    data-aos-duration="800">
-              <div class="amh-proof__icon">🌐</div>
-              <div class="amh-proof__meta">
-                <p class="amh-proof__chipTitle">Economic Impact at Scale</p>
-                <p class="amh-proof__chipValue">23M</p>
-                <p class="amh-proof__chipSub">jobs created</p>
-              </div>
-            </article>
-
+        <div class="amh-footer__bottom">
+          <div class="amh-footer__brand">
+            <img
+              src="assets/amh_logo_1-white.png"
+              alt="AMH Catalyst Center"
+              class="amh-footer__logo"
+            />
           </div>
 
-          <p class="amh-proof__closing"
-            data-aos="fade-up"
-            data-aos-delay="550"
-            data-aos-duration="800">
-            AMH is closing the gap.
-          </p>
-        </div>
+          <nav class="amh-footer__links" aria-label="Footer">
+            <a href="#" class="amh-footer__link">Terms of service</a>
+            <a href="#" class="amh-footer__link">Privacy policy</a>
+            <a href="#" class="amh-footer__link">LinkedIn</a>
+          </nav>
 
-      </div>
-    </div>
-  </section>
-  <section class="amh-gradient-callout" id="capital-shift">
-      <div class="container">
-        <div class="amh-gradient-callout__inner">
-
-          <h2 class="amh-gradient-callout__title"
-              data-aos="fade-up"
-              data-aos-duration="800">
-            We know capital misses opportunities.
-            <br>
-            We’re changing who gets seen.
-          </h2>
-
-          <p class="amh-gradient-callout__text"
-            data-aos="fade-up"
-            data-aos-delay="150"
-            data-aos-duration="800">
-            Through AI-powered preparation, financial modeling, and pitch-readiness standards,
-            AMH equips early-stage founders to meet institutional expectations—
-            making opportunities clearer, comparable, and investment-ready.
-          </p>
-
-          <div class="amh-gradient-callout__cta"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-duration="800">
-            <a href="#" class="btn amh-gradient-callout__btn">
-              Run with AMH
-            </a>
+          <div class="amh-footer__meta">
+            <span>© <span id="amhYear">2026</span> AMH Catalyst Center</span>
           </div>
-
         </div>
       </div>
-    </section>
-   <section class="amh-credstrip" id="credibility">
-      <div class="container">
-        <div class="row cred-center g-5">
-          <div class="col-12 col-lg-7">
-            <h2 class="amh-credstrip__title"
-                data-aos="fade-up"
-                data-aos-duration="800">
-              Built by Operators With a Proven Record of Capital at Scale
-            </h2>
+    </footer>
 
-            <div class="amh-credstrip__copy"
-                data-aos="fade-up"
-                data-aos-delay="120"
-                data-aos-duration="800">
-              <p class="amh-credstrip__text">
-                Jenny and Grace led a $420M fund that supported 336,000 entrepreneurs and unlocked 7× leverage on original
-                investment through disciplined deployment and ecosystem partnership.
-              </p>
-
-              <p class="amh-credstrip__text">
-                AMH Catalyst applies that same rigor to building the infrastructure behind venture-stage success—strengthening
-                founder readiness, aligning capital partners, and accelerating pathways to growth.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-5">
-            <div class="amh-credstrip__stats">
-
-              <div class="amh-credstrip__stat"
-                  data-aos="fade-up"
-                  data-aos-delay="150"
-                  data-aos-duration="800">
-                <p class="amh-credstrip__value">$420M</p>
-                <p class="amh-credstrip__label">fund led</p>
-                <span class="amh-credstrip__bar" aria-hidden="true"></span>
-              </div>
-
-              <div class="amh-credstrip__stat"
-                  data-aos="fade-up"
-                  data-aos-delay="250"
-                  data-aos-duration="800">
-                <p class="amh-credstrip__value">336,000</p>
-                <p class="amh-credstrip__label">entrepreneurs supported</p>
-                <span class="amh-credstrip__bar" aria-hidden="true"></span>
-              </div>
-
-              <div class="amh-credstrip__stat"
-                  data-aos="fade-up"
-                  data-aos-delay="350"
-                  data-aos-duration="800">
-                <p class="amh-credstrip__value">7×</p>
-                <p class="amh-credstrip__label">leverage unlocked</p>
-                <span class="amh-credstrip__bar" aria-hidden="true"></span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="amh-credstrip__footer"
-            data-aos="fade-up"
-            data-aos-delay="450"
-            data-aos-duration="800">
-          <p class="amh-credstrip__closing">
-            Access high-potential founders. Build stronger pipelines. Deliver measurable, market-scale impact.
-          </p>
-
-          <a class="btn amh-credstrip__btn" href="#">
-            Run with AMH
-          </a>
-        </div>
-      </div>
-    </section>
-  
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./main.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-  AOS.init({
-    once: true,
-    duration: 850,
-    easing: "ease-out-cubic",
-    offset: 80
-  });
-</script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 850,
+        easing: "ease-out-cubic",
+        offset: 80,
+      });
+    </script>
+  </body>
 </html>
