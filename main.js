@@ -49,45 +49,6 @@
 })();
 
 
-/*parallax*/
-(() => {
-  const section = document.querySelector(".parallax");
-  const img = document.querySelector(".parallax__img");
-  if (!section || !img) return;
-
-  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (prefersReduced) return;
-
-  const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
-  let ticking = false;
-
-  const update = () => {
-    ticking = false;
-
-    const rect = section.getBoundingClientRect();
-    const vh = window.innerHeight || 1;
-
-    const start = vh;
-    const end = -rect.height;
-    const p = clamp((start - rect.top) / (start - end), 0, 1);
-
-    const strength = 60;
-    const y = (p - 0.5) * strength;
-
-    img.style.transform = `translate3d(-50%, calc(-50% + ${y}px), 0)`;
-  };
-
-  const onScroll = () => {
-    if (!ticking) {
-      ticking = true;
-      requestAnimationFrame(update);
-    }
-  };
-
-  window.addEventListener("scroll", onScroll, { passive: true });
-  window.addEventListener("resize", () => requestAnimationFrame(update));
-  requestAnimationFrame(update);
-})();
 
 /*acces pattern*/
 (function () {
