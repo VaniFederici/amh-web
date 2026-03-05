@@ -527,7 +527,7 @@ body {
   background-image: url("../assets/access-patron-2.svg");
   background-size: 150% 150%;
   opacity: 0.85;
-  animation: amhAccessPatternB 24s ease-in-out infinite;
+  animation: amhAccessPatternB 8s ease-in-out infinite;
 }
 
 .amh-access::after {
@@ -1212,7 +1212,7 @@ body {
   line-height: 1.7;
   font-weight: 700;
   text-shadow: 0 10px 26px rgba(11, 15, 26, 0.18);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
