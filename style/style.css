@@ -333,8 +333,8 @@ body {
 }
 
 .amh-step-dot {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 999px;
   display: flex;
   align-items: center;
@@ -1079,7 +1079,7 @@ body {
 }
 .about__subtitle {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.75;
   color: rgba(11, 15, 26, 0.78);
   max-width: 65ch;
