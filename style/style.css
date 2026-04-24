@@ -2240,7 +2240,7 @@ body {
   }
 
   .amh-unlock__photo img {
-    width: 100%;
+    width: 60%;
   }
 
   /* ACCESS */
@@ -2374,12 +2374,20 @@ body {
     width: 100%;
     margin-top: 18px;
   }
+ 
 
   /* SECTIONS spacing */
   .amh-section {
     padding: 56px 0;
   }
-
+ 
+ .amh-h2{
+    font-size: 3rem;
+    width: 101%;
+  }
+  .amh-p{
+    font-size: 1.1rem;
+  }
   .insid-track {
     padding: 56px 0;
   }
@@ -2718,7 +2726,7 @@ body {
     }
 
     .amh-board {
-      padding: 70px 0 60px 0;
+     padding: 46px 48px 69px 48px;
     }
 
     .amh-board__head {
@@ -2770,6 +2778,106 @@ body {
     .amh-board__cta-wrap {
       margin-top: 24px;
     }
+    /*our why*/
+    .about-why__grid {
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.about-why__main {
+  padding: 42px 24px;
+  border-radius: 10px;
+}
+
+.about-why__main::after {
+  left: 24px;
+  top: 26px;
+  width: 64px;
+}
+
+.about-why__main-inner {
+  max-width: 100%;
+}
+
+.about-why__eyebrow {
+  margin-bottom: 20px;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.about-why__title {
+  margin: 0 0 18px 0;
+  max-width: none;
+  font-size: 2rem;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+}
+
+.about-why__text {
+  margin: 0 0 16px 0;
+  max-width: none;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.about-why__text--last {
+  margin-bottom: 0;
+}
+
+.about-why__side {
+  width: 100%;
+  flex: 0 0 auto;
+  gap: 12px;
+}
+
+.amh-story {
+  padding: 70px 0 60px 0;
+}
+
+.amh-story__eyebrow {
+  margin-bottom: 12px;
+  font-size: 0.82rem;
+}
+
+.amh-story__title {
+  margin-bottom: 18px;
+  font-size: 2.2rem;
+  line-height: 1.08;
+  text-align: center;
+}
+
+.amh-story__content {
+  padding-right: 0;
+  margin-bottom: 20px;
+}
+
+.amh-story__text {
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.amh-story__stats {
+  padding-left: 0;
+  gap: 12px;
+}
+
+.amh-story__stat {
+  padding: 22px 20px;
+}
+
+.amh-story__stat-number {
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.amh-story__stat-label {
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
   }
 
   /* CONTACT */
@@ -2794,6 +2902,12 @@ body {
     width: 100%;
   }
   /*investors*/
+  .amh-proof__title{
+  font-size: 2.1rem;
+  }
+  .amh-investors__title{
+    font-size: 2.1rem;
+  }
 }
 
 /* =========================
@@ -2810,6 +2924,7 @@ body {
     padding: 6px 0 28px;
     height: auto;
   }
+  
 
   .bg-layer {
     inset: -26% -24%;
